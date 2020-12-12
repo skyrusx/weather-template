@@ -15,8 +15,12 @@ body {
     z-index: -1;
 }
 
-.weather-wrapper h1.title {
+.weather-wrapper h1.title,
+.weather-wrapper .copyright {
     color: #FFFFFF;
+}
+
+.weather-wrapper h1.title {
     text-transform: uppercase;
     font-size: 3rem;
     font-weight: normal;
