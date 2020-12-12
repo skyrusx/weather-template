@@ -14,3 +14,10 @@ body {
     position: absolute;
     z-index: -1;
 }
+
+.weather-wrapper h1.title {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: normal;
+}
