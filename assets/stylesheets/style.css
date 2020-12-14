@@ -25,3 +25,34 @@ body {
     font-size: 3rem;
     font-weight: normal;
 }
+
+.left-sidebar {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.left-sidebar .city-data {
+    padding-top: 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.left-sidebar .city-data .name,
+.left-sidebar .city-data .temperature {
+    color: #FFFFFF;
+}
+
+.left-sidebar .city-data .time-zone {
+    color: #48EBFA;
+    font-size: 10px;
+    line-height: 10px;
+    margin-top: 5px;
+}
+
+.left-sidebar .city-data .name {
+    font-size: 20px;
+}
+
+.left-sidebar .city-data .temperature {
+    font-size: 28px;
+    text-align: right;
+}
