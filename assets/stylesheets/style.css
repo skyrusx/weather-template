@@ -81,3 +81,16 @@ body {
     width: auto;
     height: auto;
 }
+
+.left-sidebar .share {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.left-sidebar .share a {
+    text-decoration: unset;
+}
+
+.left-sidebar .share a .bi {
+    margin: 4px;
+}
