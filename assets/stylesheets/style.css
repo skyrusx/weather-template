@@ -56,3 +56,28 @@ body {
     font-size: 28px;
     text-align: right;
 }
+
+.search-city {
+    padding: 12px 10px;
+    background: #FFFFFF;
+    position: relative;
+}
+
+.search-city input[type="text"]:not(.browser-default) {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #000000;
+    border-radius: 0;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.search-city .search-icon {
+    width: auto;
+    height: auto;
+}
