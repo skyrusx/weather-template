@@ -174,3 +174,22 @@ body {
     font-size: 100px;
     line-height: 80px;
 }
+
+#preloader {
+    background-color: #FFFFFF;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+.preloader {
+    background: #FFFFFF;
+    height: 36px;
+    left: 50%;
+    margin-left: -18px;
+    margin-top: -18px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 36px;
+}
