@@ -132,3 +132,26 @@ body {
 .weather-current-city .today .timeline .temperature {
     text-align: right;
 }
+
+.current-city {
+    color: #FFFFFF;
+}
+
+.current-city .header {
+    text-align: right;
+    padding-top: 15px;
+}
+
+.current-city .header .city-name {
+    font-size: 30px;
+}
+
+.current-city .header .region {
+    font-size: 16px;
+}
+
+.current-city.default-city {
+    background-image: url("../images/cities/city.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+}
