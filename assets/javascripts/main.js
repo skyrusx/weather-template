@@ -1,4 +1,4 @@
 /****************************  $Preloader  *****************************/
-$(window).ready(function() {
+$(document).ready(function() {
     $('#preloader').fadeOut('slow');
 });
