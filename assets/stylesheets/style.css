@@ -4,6 +4,26 @@ body {
     font-weight: 100;
 }
 
+#preloader {
+    background-color: #FFFFFF;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+
+.preloader {
+    background: #FFFFFF;
+    height: 36px;
+    left: 50%;
+    margin-left: -18px;
+    margin-top: -18px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 36px;
+}
+
 .weather-bg {
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -16,46 +36,15 @@ body {
     z-index: -1;
 }
 
-.weather-wrapper h1.title,
-.weather-wrapper .copyright {
-    color: #FFFFFF;
-}
-
 .weather-wrapper h1.title {
+    color: #FFFFFF;
     text-transform: uppercase;
     font-size: 3rem;
     font-weight: normal;
 }
 
-.left-sidebar, .right-sidebar {
+.left-sidebar {
     background: rgba(0, 0, 0, 0.7);
-}
-
-.left-sidebar .city-data {
-    padding-top: 10px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid #CCCCCC;
-}
-
-.left-sidebar .city-data .name,
-.left-sidebar .city-data .temperature {
-    color: #FFFFFF;
-}
-
-.left-sidebar .city-data .time-zone {
-    color: #48EBFA;
-    font-size: 10px;
-    line-height: 10px;
-    margin-top: 5px;
-}
-
-.left-sidebar .city-data .name {
-    font-size: 20px;
-}
-
-.left-sidebar .city-data .temperature {
-    font-size: 28px;
-    text-align: right;
 }
 
 .search-city {
@@ -83,6 +72,30 @@ body {
     height: auto;
 }
 
+.left-sidebar .city-data {
+    padding-top: 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.left-sidebar .city-data .time-zone {
+    color: #48EBFA;
+    font-size: 10px;
+    line-height: 10px;
+    margin-top: 5px;
+}
+
+.left-sidebar .city-data .name {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.left-sidebar .city-data .temperature {
+    color: #FFFFFF;
+    font-size: 28px;
+    text-align: right;
+}
+
 .left-sidebar .share {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -96,46 +109,14 @@ body {
     margin: 4px;
 }
 
-.right-sidebar {
-    color: #FFFFFF;
-}
-
-.weather-current-city .icon {
-    padding-top: 15px;
-    padding-bottom: 25px;
-}
-
-.weather-current-city .icon img {
-    width: 110px;
-}
-
-.weather-current-city .status {
-    font-size: 35px;
-    padding-bottom: 10px;
-}
-
-.weather-current-city .today .timeline {
-    border-bottom: 1px solid #CCCCCC;
-    line-height: 39px;
-}
-
-.weather-current-city .today .timeline:first-child {
-    border-top: 1px solid #CCCCCC;
-}
-
-.weather-current-city .today .timeline .hour,
-.weather-current-city .today .timeline .temperature {
-    display: inline-block;
-    width: 50%;
-    font-size: 18px;
-}
-
-.weather-current-city .today .timeline .temperature {
-    text-align: right;
-}
-
 .current-city {
     color: #FFFFFF;
+}
+
+.current-city.default-city {
+    background-image: url("../images/cities/city.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .current-city .header {
@@ -149,12 +130,6 @@ body {
 
 .current-city .header .region {
     font-size: 16px;
-}
-
-.current-city.default-city {
-    background-image: url("../images/cities/city.jpg");
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .current-city .footer {
@@ -175,22 +150,47 @@ body {
     line-height: 80px;
 }
 
-#preloader {
-    background-color: #FFFFFF;
-    height: 100%;
-    position: fixed;
-    width: 100%;
-    z-index: 999999;
+.right-sidebar {
+    background: rgba(0, 0, 0, 0.7);
+    color: #FFFFFF;
 }
 
-.preloader {
-    background: #FFFFFF;
-    height: 36px;
-    left: 50%;
-    margin-left: -18px;
-    margin-top: -18px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 36px;
+.right-sidebar .icon {
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.right-sidebar .icon img {
+    width: 110px;
+}
+
+.right-sidebar .status {
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.right-sidebar .today .timeline {
+    border-bottom: 1px solid #CCCCCC;
+    line-height: 39px;
+}
+
+.right-sidebar .today .timeline:first-child {
+    border-top: 1px solid #CCCCCC;
+}
+
+.right-sidebar .today .timeline .hour {
+    display: inline-block;
+    width: 50%;
+    font-size: 18px;
+}
+
+.right-sidebar .today .timeline .temperature {
+    display: inline-block;
+    width: 50%;
+    font-size: 18px;
+    text-align: right;
+}
+
+.weather-wrapper .copyright {
+    color: #FFFFFF;
 }
