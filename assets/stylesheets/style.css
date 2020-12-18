@@ -157,11 +157,11 @@ body {
 
 .right-sidebar .icon {
     padding-top: 15px;
-    padding-bottom: 25px;
+    height: 112px;
 }
 
 .right-sidebar .icon img {
-    width: 110px;
+    width: 100px;
 }
 
 .right-sidebar .status {
